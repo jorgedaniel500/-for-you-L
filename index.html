@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Para el Amor de Mi Vida</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #fff5f5;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 600px;
+            padding: 40px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .container::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 10px;
+            background: linear-gradient(90deg, #ff6b6b, #ff8e8e, #ffb3b3);
+        }
+        
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            color: #ff6b6b;
+            font-size: 2.8rem;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+        }
+        
+        .corazon {
+            width: 80px;
+            height: 80px;
+            background-color: #ff6b6b;
+            margin: 30px auto;
+            transform: rotate(-45deg);
+            position: relative;
+            animation: latido 1.2s infinite;
+            box-shadow: 0 0 20px rgba(255, 107, 107, 0.4);
+        }
+        
+        .corazon:before, .corazon:after {
+            content: "";
+            width: 80px;
+            height: 80px;
+            background-color: #ff6b6b;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        .corazon:before {
+            top: -40px;
+            left: 0;
+        }
+        
+        .corazon:after {
+            top: 0;
+            left: 40px;
+        }
+        
+        @keyframes latido {
+            0% { transform: rotate(-45deg) scale(1); }
+            25% { transform: rotate(-45deg) scale(1.1); }
+            50% { transform: rotate(-45deg) scale(1); }
+            75% { transform: rotate(-45deg) scale(1.1); }
+            100% { transform: rotate(-45deg) scale(1); }
+        }
+        
+        .mensaje-especial {
+            background-color: #fff9f9;
+            border-left: 4px solid #ff6b6b;
+            padding: 20px;
+            margin: 30px 0;
+            text-align: left;
+            border-radius: 0 10px 10px 0;
+            font-style: italic;
+        }
+        
+        .firma {
+            font-family: 'Dancing Script', cursive;
+            font-size: 1.5rem;
+            color: #ff6b6b;
+            margin-top: 40px;
+        }
+        
+        .decoracion {
+            position: absolute;
+            font-size: 2rem;
+            color: rgba(255, 107, 107, 0.2);
+        }
+        
+        .decoracion-1 { top: 20px; left: 20px; }
+        .decoracion-2 { bottom: 20px; right: 20px; transform: rotate(180deg); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="decoracion decoracion-1">❤️</div>
+        <div class="decoracion decoracion-2">❤️</div>
+        
+        <h1>¡Hola mi amor!</h1>
+        
+        <p>Esta página fue creada solo para ti, porque eres la persona más especial en mi vida.</p>
+        
+        <div class="corazon"></div>
+        
+        <div class="mensaje-especial">
+            Cada día a tu lado es un regalo que atesoro profundamente. 
+            Tu sonrisa ilumina mis días y tu amor llena mi vida de felicidad.
+            Eres perfecta exactamente como eres.
+        </div>
+        
+        <p>Donde sea que estemos, siempre estaré contigo. Te amo más de lo que las palabras pueden expresar.</p>
+        
+        <div class="firma">Con todo mi amor,<br>[Daniel]</div>
+    </div>
+</body>
+</html>
